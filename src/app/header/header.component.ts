@@ -15,7 +15,7 @@ export class HeaderComponent {
   }
 
   logOut() {
-    this.auth.logout(); // gets logout() function and bind it to auth service imported in constructor
+    this.auth.logout(); // gets logout() function and bind it to auth service imported in
   }
 
 }
