@@ -23,20 +23,20 @@ export class HomeComponent implements OnInit {
 
 
   getTrangingMovies() {
-    this.http.get("http://localhost:4200/assets/data/trending-movies.json").subscribe((movies) => {
+    this.http.get("assets/data/trending-movies.json").subscribe((movies) => {
       this.trendingMovies = movies;
       console.log("Trending Movies: ", this.trendingMovies)
     })
   }
 
   getTheatreMovies() {
-    this.http.get("http://localhost:4200/assets/data/theatre-movies.json").subscribe((movies) => {
+    this.http.get("assets/data/theatre-movies.json").subscribe((movies) => {
       this.theatreMovies = movies;
       console.log("Theatre Movies: ", this.theatreMovies)
     })
   }
   getPopularMovies() {
-    this.http.get("http://localhost:4200/assets/data/popular-movies.json").subscribe((movies) => {
+    this.http.get("assets/data/popular-movies.json").subscribe((movies) => {
       this.popularMovies = movies;
       console.log("Popular Movies: ", this.popularMovies)
     })
